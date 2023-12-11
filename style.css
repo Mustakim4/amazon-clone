@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header section */
+
+.header {
+    height: 65px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    position: fixed;
+    z-index: 9999;
+}
+
+.header-ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-ul li {
+    list-style-type: none;
+}
+
+.amazon-logo {
+    width: 120px;
+    height: 50px;
+    padding: 10px 5px;
+    margin: 4px;
+}
+
+.header-ul-li {
+    display: flex;
+    align-items: end;
+    padding: 10px 5px;
+    gap: 5px;
+}
+
+.first-header-li {
+    font-size: 14px;
+}
+
+.second-header-li {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.header-search-bar {
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.header-search-bar .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    font-size: 20px;
+    background-color: rgb(214, 210, 210);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header-search-bar .input-span {
+    width: 80%;
+    height: 100%;
+}
+
+.header-search-bar .input-span input {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+body:has(.input-span input:focus) .header-search-bar {
+    outline: 3px solid rgb(250, 171, 61);
+}
+
+.header-search-bar .logo-span {
+    height: 100%;
+    width: 10%;
+    font-size: 25px;
+}
+
+.header-search-bar .logo-span i {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(250, 171, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indian-flag-log {
+    width: 20px;
+    height: 20px;
+}
+
+.sing-in {
+    display: flex;
+    padding: 10px 5px;
+    flex-direction: column;
+}
+
+.cart {
+    font-size: 20px;
+}
+
+.indian-flag-text,
+.li-cart {
+    padding: 10px 5px;
+}
+
+.amazon-logo:hover,
+.header-ul-li:hover,
+.indian-flag-text:hover,
+.sing-in:hover,
+.li-cart:hover {
+    outline: 1px solid white;
+    cursor: pointer;
+}
+
+/* navbar */
+
+.navbar {
+    width: 100%;
+    background-color: rgb(17, 32, 59);
+    color: white;
+    height: 45px;
+    position: absolute;
+    top: 65px;
+}
+
+.navbar-ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.navbar-ul li:hover {
+    outline: 1px solid white;
+    cursor: pointer;
+}
+
+/* hero section */
+
+.hero {
+    width: 100%;
+    position: relative;
+}
+
+.bg-img {
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.svg-img {
+    position: absolute;
+    top: 180px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+main {
+    width: 100%;
+    /* margin: auto; */
+    position: absolute;
+    top: 360px;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 340px));
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+
+    display: grid;
+    grid-template-areas:
+        "first-place first-place"
+        "second-place fourth-place"
+        "second-place fourth-place"
+        "third-place fifth-place"
+        "sixth-place eighth-place"
+        "sixth-place eighth-place"
+        "seventh-place nineth-place"
+        "tenth-place tenth-place"
+    ;
+    padding: 15px;
+}
+
+#first-place {
+    grid-area: first-place;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#second-place {
+    grid-area: second-place;
+}
+
+#third-place {
+    grid-area: third-place;
+}
+
+#fourth-place {
+    grid-area: fourth-place;
+}
+
+#fifth-place {
+    grid-area: fifth-place;
+}
+
+#sixth-place {
+    grid-area: sixth-place;
+}
+
+#seventh-place {
+    grid-area: seventh-place;
+}
+
+#eighth-place {
+    grid-area: eighth-place;
+}
+
+#nineth-place {
+    grid-area: nineth-place;
+}
+
+#tenth-place {
+    grid-area: tenth-place;
+    text-decoration: none;
+    color: rgb(77, 188, 253);
+    margin-top: 10px;
+}
+
+.card .card-img img {
+    width: 150px;
+    height: 85px;
+}
+
+
+.first-text {
+    text-decoration: none;
+    background-color: rgb(199, 20, 20);
+    color: white;
+    font-size: 15px;
+    padding: 4px;
+    margin-right: 8px;
+}
+
+.second-text {
+    text-decoration: none;
+    color: rgba(171, 30, 30, 0.854);
+    font-weight: 600;
+}
+
+.home-card a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.home-card-img img {
+    width: 150px;
+    height: 100px;
+}
+
+/* todays deal section */
+
+.deals-section {
+    position: absolute;
+    top: 420px;
+    background: linear-gradient(180deg, rgba(244, 244, 244, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    width: 100%;
+    height: 100%;
+    z-index: -9;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    top: 370px;
+    background: white;
+    width: 97%;
+    height: 45%;
+    overflow: hidden;
+}
+
+.head-line {
+    width: 100%;
+    height: 15%;
+    padding: 15px;
+}
+
+.head-line span {
+    font-size: 25px;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+.head-line a {
+    text-decoration: none;
+    color: rgb(17, 168, 255);
+    font-size: 14px;
+}
+
+.all-todays-deal-card {
+    /* border: 1px solid red; */
+    height: 85%;
+    display: flex;
+}
+
+.deal-card {
+    /* border: 1px solid red; */
+    margin: 5px;
+    min-width: 250px;
+    height: 92%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.deal-card p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.svg-img-card {
+    background-color: rgba(250, 251, 251, 0.455);
+    position: absolute;
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* back on top button */
+.back-on-top-button {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 1150px;
+    background-color: rgb(2, 75, 110);
+    color: white;
+}
